@@ -9,7 +9,9 @@ import Layout from "./HOC/Layout";
 import NotFound from "./containers/NotFound";
 import Login from "./containers/Login";
 import Register from "./containers/Register";
+import StoreView from "./StoreView";
 import "./style/app.scss";
+
 import store from "./store";
 
 function App() {
@@ -26,6 +28,7 @@ function App() {
               <Route path="/store" component={NotFound} exact />
               <Route path="/login" component={Login} exact />
               <Route path="/register" component={Register} exact />
+              <Route path="/store/storeview" component={StoreView} exact />
               <Route path="*" component={Home} />
             </Switch>
           </Layout>
